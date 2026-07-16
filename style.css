@@ -1,0 +1,63 @@
+* {
+    font-family: monospace;
+    font-size: 30px;
+    background-color: #48395d;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+input[type="number"] {
+  background: #2d1254;
+  color: #e8d5ff;
+  border: 2px solid #6b21a8;
+  font-size: 20px;
+  padding: 8px 12px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  outline: none;
+}
+
+input[type="number"]::placeholder {
+  color: #a78bca;
+}
+
+input[type="number"]:focus {
+  border-color: #c084fc;
+}
+
+button {
+  background: #2d1254;
+  color: #e8d5ff;
+  border: 2px solid #6b21a8;
+  font-size: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+button:hover {
+  border-color: #c084fc;
+  color: #c084fc;
+}
+
+button:active {
+  filter: brightness(1.2);
+}
+
+#result {
+  background: #2d1254;
+  border: 2px solid #6b21a8;
+  padding: 16px;
+  margin-top: 16px;
+  min-height: 24px;
+}
+
+#result:empty {
+  display: none;
+}
